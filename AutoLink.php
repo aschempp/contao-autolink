@@ -190,7 +190,7 @@ class AutoLink extends Frontend
 						
 						$strQuery = $objKeywords->regex ? $objKeywords->tag : preg_quote($objKeywords->tag);
 						
-						$text->innertext = preg_replace('@' . ($objKeywords->words ? '(\A|[^A-Za-z0-9]{1})' : '') . '('.str_replace('@', '\@', $strQuery).')' . ($objKeywords->words ? '([^A-Za-z0-9]{1}|\Z)' : '') . '@s'.($objKeywords->casesensitive ? '' : 'i'), $strReplacement, $text->innertext);
+						$text->innertext = preg_replace('@' . ($objKeywords->words ? '(\A|[^A-Za-z0-9]{1})' : '') . '('.str_replace('@', '\@', $strQuery).')' . ($objKeywords->words ? '([^A-Za-z0-9]{1}|\Z)' : '') . '@su'.($objKeywords->casesensitive ? '' : 'i'), $strReplacement, $text->innertext);
 					}
 				}
 			}
@@ -216,7 +216,7 @@ class AutoLink extends Frontend
 				
 					$strQuery = $objKeywords->regex ? $objKeywords->tag : preg_quote($objKeywords->tag);
 					
-					$text->innertext = preg_replace('@' . ($objKeywords->words ? '(\A|[^A-Za-z0-9]{1})' : '') . '('.str_replace('@', '\@', $strQuery).')' . ($objKeywords->words ? '([^A-Za-z0-9]{1}|\Z)' : '') . '@'.($objKeywords->casesensitive ? '' : 'i'), $strReplacement, $text->innertext);
+					$text->innertext = preg_replace('@' . ($objKeywords->words ? '(\A|[^A-Za-z0-9]{1})' : '') . '('.str_replace('@', '\@', $strQuery).')' . ($objKeywords->words ? '([^A-Za-z0-9]{1}|\Z)' : '') . '@u'.($objKeywords->casesensitive ? '' : 'i'), $strReplacement, $text->innertext);
 				}
 			}
 			
