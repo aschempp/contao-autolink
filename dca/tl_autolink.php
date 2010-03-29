@@ -342,8 +342,20 @@ class tl_autolink extends Backend
 	 * @param object DataContainer $dc
 	 * @return string
 	 */
-	public function addImage($row, $label, $imageAttribute, DataContainer $dc)
+	public function addImage($row, $label, $param3, $param4, $blnReturnImage=false)
 	{
+		// Parameter sorting has been changed in 2.8: http://dev.typolight.org/issues/show/1488
+		if (version_compare(VERSION.'.'.BUILD, '2.7.6', '>'))
+		{
+			$dc = $param3;
+			$imageAttribute = $param4;
+		}
+		else
+		{
+			$dc = $param4;
+			$imageAttribute = $param3;
+		}
+		
 		$sub = 0;
 		$image = 'regular'.($row['published'] ? '' : '_1').'.gif';
 
