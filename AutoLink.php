@@ -208,7 +208,7 @@ class AutoLink extends Frontend
 						$text->parent()->nextSibling();
 						continue;
 					}
-					elseif (in_array($text->parent()->tag, $this->arrNolinkTags) && ($objKeywords->addTip || $objKeywords->type != 'none'))
+					elseif ((in_array($text->parent()->tag, $this->arrNolinkTags) || in_array($text->parent()->parent()->tag, $this->arrNolinkTags)) && ($objKeywords->addTip || $objKeywords->type != 'none'))
 					{
 						$text->parent()->nextSibling();
 						continue;
