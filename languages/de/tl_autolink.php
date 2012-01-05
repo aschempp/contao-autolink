@@ -52,6 +52,8 @@ $GLOBALS['TL_LANG']['tl_autolink']['includeSubpages']	= array('Auf Unterseiten a
 $GLOBALS['TL_LANG']['tl_autolink']['published']			= array('Veröffentlicht', 'Solange Sie diese Option nicht wählen, wird der Suchbegriff auf Ihrer Webseite nicht verlinkt.');
 $GLOBALS['TL_LANG']['tl_autolink']['start']				= array('Anzeigen ab', 'Wenn Sie hier ein Datum erfassen, wird der Suchbegriff erst ab diesem Tag verlinkt.');
 $GLOBALS['TL_LANG']['tl_autolink']['stop']				= array('Anzeigen bis', 'Wenn Sie hier ein Datum erfassen, wird der Suchbegriff nur bis zu diesem Tag verlinkt.');
+$GLOBALS['TL_LANG']['tl_autolink']['limitCount']		= array('Anzahl begrenzen', 'Eine maximale Anzahl an Links bestimmen');
+$GLOBALS['TL_LANG']['tl_autolink']['count']				= array('Maximale Linkzahl', 'Die maximale Anzahl an ersetzten Links zu diesem Begriff');
 
 
 /**

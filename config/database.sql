@@ -34,6 +34,8 @@ CREATE TABLE `tl_autolink` (
   `limitPages` char(1) NOT NULL default '',
   `pages` blob NULL,
   `includeSubpages` char(1) NOT NULL default '',
+  `limitCount` char(1) NOT NULL default '',
+  `count` int(10) unsigned NOT NULL default '0',
   `cssFilter` char(1) NOT NULL default '',
   `cssSelector` varchar(255) NOT NULL default '',
   `cssID` varchar(255) NOT NULL default '',
